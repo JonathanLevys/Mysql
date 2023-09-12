@@ -81,3 +81,15 @@ Select * from carros_estacionados where placa = 'ABC1234';
 Select * from carros_estacionados where modelo = 'cruze';
 
 Select * from carros_estacionados where marca = 'gm';
+
+
+
+**como Selecionar mais campos**
+
+Select * from carros_estacionados
+where marca = 'gm'
+and modelo = 'cruze';
+
+**como deletar linhas**
+delete from estacionamento.carros_estacionados
+where carros_estacionados_id = 1;
