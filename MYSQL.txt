@@ -1,0 +1,83 @@
+
+Criação de tabelas
+
+CREATE TABLE historico_carros (
+  historico_id INT NOT NULL AUTO_INCREMENT,
+  placa VARCHAR(7) NOT NULL,
+  PRIMARY KEY (historico_id));
+
+
+INSERT INTO `estacionamento`.`carros_estacionados`
+(`marca`,
+`modelo`,
+`placa`,
+`data_entrada`)
+VALUES
+('Fiat',
+'Uno',
+'ABC1234',
+now());
+
+INSERT INTO `estacionamento`.`carros_estacionados`
+(`marca`,
+`modelo`,
+`placa`,
+`data_entrada`)
+VALUES
+('Ford',
+'Fusion',
+'SDF4567',
+now());
+
+INSERT INTO `estacionamento`.`carros_estacionados`
+(`marca`,
+`modelo`,
+`placa`,
+`data_entrada`)
+VALUES
+('GM',
+'Cruze',
+'QWE7890',
+now());
+
+INSERT INTO `estacionamento`.`carros_estacionados`
+(`marca`,
+`modelo`,
+`placa`,
+`data_entrada`)
+VALUES
+('VW',
+'Jetta',
+'IOP9632',
+now());
+
+INSERT INTO `estacionamento`.`carros_estacionados`
+(`marca`,
+`modelo`,
+`placa`,
+`data_entrada`)
+VALUES
+('KIA',
+'Sorento',
+'VBN0258',
+now());
+
+INSERT INTO `estacionamento`.`carros_estacionados`
+(`marca`,
+`modelo`,
+`placa`,
+`data_entrada`)
+VALUES
+('JAC',
+'J7',
+'UJN4568',
+now());
+
+Select * from carros_estacionados;
+
+
+Select * from carros_estacionados where placa = 'ABC1234';
+
+Select * from carros_estacionados where modelo = 'cruze';
+
+Select * from carros_estacionados where marca = 'gm';
